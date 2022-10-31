@@ -1,4 +1,32 @@
-@media (max-width: 992px) {
+@media (max-width: 1135px) {
+  .header-body {
+    &__img {
+      height: 600px;
+    }
+  }
+}
+@media (max-width: 1105px) {
+  // .header {
+  //   background: rgba(0, 0, 0, 0.5);
+  // }
+  .header-body {
+    &__info {
+      max-width: 600px;
+    }
+    &__img {
+      height: 560px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-body {
+    &__title {
+      max-width: 665px;
+      width: 100%;
+      font-size: 55px;
+    }
+  }
   .header-nav {
     &__btn {
       display: block;
@@ -55,13 +83,13 @@
       gap: 20px 0;
       width: 0%;
       overflow-x: hidden;
-      transition: all 0.4s ease-in-out;
-    }
-    &__wrap--show {
-      width: 100%;
+      transition: all 0.6s ease-in-out;
     }
     &__menu {
       flex-direction: column;
+    }
+    &__wrap--show {
+      width: 100%;
     }
     &__link {
       color: #fff;
@@ -79,6 +107,86 @@
       line-height: 30px;
       background: #000;
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .header-body {
+    &__title {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    &__contact {
+      gap: 0 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-body {
+    &__title {
+      font-size: 35px;
+    }
+    &__contact {
+      gap: 0 15px;
+    }
+    &__info {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__subscribe {
+      padding: 18px 15px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header-body {
+    &__info {
+      padding: 25px 0;
+    }
+    &__img {
+      display: none;
+    }
+    &__title {
+      margin-bottom: 15px;
+      line-height: 55px;
+    }
+    &__subscribe {
+      padding: 12px 15px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header-nav {
+    padding: 15px 0;
+  }
+  .header-body {
+    &__title {
+      font-size: 32px;
+    }
+    &__subscribe {
+      padding: 12px 12px;
+    }
+    &__contact {
+      gap: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header-body {
+    text-align: center;
+    &__title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+    &__contact {
+      gap: 15px 0;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 }

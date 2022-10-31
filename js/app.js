@@ -14,11 +14,10 @@ $('.right').slick({
 
 
 const btn = document.querySelector('.header-nav__btn');
-const nav = document.querySelector('.header-nav__wrap')
+const nav = document.querySelector('.header-nav__wrap');
 
 btn.addEventListener('click', function () {
   btn.classList.toggle('header-nav__btn--active');
-  // nav.style.width = "100%";
   nav.classList.toggle('header-nav__wrap--show')
 })
 
