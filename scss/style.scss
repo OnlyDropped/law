@@ -20,6 +20,14 @@
     display: flex;
     align-items: center;
   }
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 184px;
+    max-width: 100%;
+    width: 100%;
+  }
   &__btn {
     display: none;
   }

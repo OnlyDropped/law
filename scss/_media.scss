@@ -1,0 +1,84 @@
+@media (max-width: 992px) {
+  .header-nav {
+    &__btn {
+      display: block;
+      width: 40px;
+      height: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.4s ease-in;
+      span {
+        position: absolute;
+        top: 4px;
+        width: 40px;
+        height: 6px;
+        border-radius: 5px;
+        left: 0;
+        right: 0;
+        background: #000;
+        transition: all 0.4s ease-in;
+      }
+      span:nth-child(2),
+      span:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      span:nth-child(4) {
+        bottom: 4px;
+        margin-top: auto;
+      }
+    }
+    &__btn--active {
+      span:nth-child(2) {
+        transform: rotate(45deg);
+        background: #fff;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg);
+        background: #fff;
+      }
+      span:nth-child(1),
+      span:nth-child(4) {
+        transform: scale(0);
+      }
+    }
+    &__wrap {
+      position: fixed;
+      inset: 0;
+      background: dodgerblue;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      margin-left: 0;
+      justify-content: center;
+      gap: 20px 0;
+      width: 0%;
+      overflow-x: hidden;
+      transition: all 0.4s ease-in-out;
+    }
+    &__wrap--show {
+      width: 100%;
+    }
+    &__menu {
+      flex-direction: column;
+    }
+    &__link {
+      color: #fff;
+      font-size: 40px;
+      line-height: 60px;
+    }
+    &__log-in {
+      font-size: 25px;
+      line-height: 30px;
+      color: #fff;
+    }
+    &__sign {
+      padding: 12px 30px;
+      font-size: 25px;
+      line-height: 30px;
+      background: #000;
+      color: #fff;
+    }
+  }
+}
