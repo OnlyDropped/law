@@ -335,7 +335,7 @@
     &::before {
       position: absolute;
       content: "";
-      right: -60px;
+      left: 200px;
       bottom: 5px;
       width: 38px;
       height: 2px;
@@ -488,8 +488,7 @@
 .right {
   width: calc(100% - 0px - 30px);
   // min-height: 398px;
-  background-color: #c4c4c4;
-  background: darkorange;
+  // background-color: #c4c4c4;
   .slick-list {
     overflow: inherit;
   }
