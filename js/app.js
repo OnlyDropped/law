@@ -38,3 +38,9 @@ btn.addEventListener('click', function () {
   nav.classList.toggle('header-nav__wrap--show')
 })
 
+
+
+//initializes the plugin to a single element and returns its instance
+var instance = OverlayScrollbars(document.querySelector('body'), {
+
+}); 

@@ -26,3 +26,11 @@ a {
   line-height: 19px;
   color: #393939;
 }
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: #a789d5;
+}
+
+.os-theme-dark > .os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle {
+    background: rgb(142, 31, 173);
+}

@@ -81,6 +81,14 @@ a {
   color: #393939;
 }
 
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: #a789d5;
+}
+
+.os-theme-dark > .os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle {
+  background: #8e1fad;
+}
+
 .header {
   background: url("../img/header-bg.svg");
   background-repeat: no-repeat;
